@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const glob = require('glob');
+
+const cwd = process.cwd();
+
+process.argv.slice(2).forEach(arg => {
+  const files = glob.sync(arg);
+  files.forEach(file => require(path.resolve(cwd, file)));
+});

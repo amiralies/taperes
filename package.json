@@ -1,0 +1,26 @@
+{
+  "name": "taperes",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rescript",
+    "clean": "rescript clean -with-deps",
+    "start": "rescript build -w"
+  },
+  "bin": {
+    "taperes": "./bin/taperes"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "Amirali Esmaeili",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiralies/taperes.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^8.0.3",
+    "rescript": "9.1.4"
+  },
+  "devDependencies": {}
+}
